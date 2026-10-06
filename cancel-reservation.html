@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurplusLink - Cancel Reservation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cancel-reservation.css">
+</head>
+<body>
+  <!-- Prototype Navigation Drawer for Instant Screen Switching -->
+  <input type="checkbox" id="nav-drawer-toggle" class="drawer-toggle">
+  <label for="nav-drawer-toggle" class="drawer-trigger" title="All App Screens Menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    <span>App Screens</span>
+  </label>
+  <div class="drawer-overlay">
+    <label for="nav-drawer-toggle" class="drawer-backdrop"></label>
+    <nav class="drawer-menu">
+      <div class="drawer-header">
+        <h3>SurplusLink Architecture</h3>
+        <label for="nav-drawer-toggle" class="drawer-close">&times;</label>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html">1. Welcome Onboarding</a>
+        <a href="role-selection.html">2. Role Selection (3 States)</a>
+        <a href="login.html">3. Login & Sign Up (Provider/Recipient)</a>
+        <a href="signup.html">4. Create Account Form</a>
+        <a href="explore.html">5. Tactical Feed & Explore</a>
+        <a href="radar.html">6. Live Radar & Tactical Map</a>
+        <a href="safety-detail.html">7. Safety & Cold-Chain Protocol</a>
+        <a href="claim-review.html">8. Claim & Reserve Review</a>
+        <a href="reservation-pass.html">9. Active Dispatch Pass & QR</a>
+        <a href="call.html">10. E2EE Dispatch In-App Call</a>
+        <a href="cancel-reservation.html" class="active">11. Cancel Reservation / Ledger</a>
+        <a href="compliance-audit.html">12. Compliance & Audit (FDA/HACCP)</a>
+        <a href="list-food.html">13. List Food - Item Details</a>
+        <a href="listing-pickup.html">14. Fast Listing - Pickup & Dock</a>
+        <a href="alerts.html">15. Tactical Alerts & Verification</a>
+        <a href="queue.html">16. Live Pickup Queue</a>
+        <a href="impact.html">17. Bakery Impact Hub & Ledger</a>
+        <a href="profile.html">18. Profile & Operations Hub</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="app-viewport">
+    <main class="cancel-screen">
+      <!-- App Header -->
+      <header class="app-header">
+        <a href="reservation-pass.html" class="icon-nav-btn" aria-label="Go back">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </a>
+
+        <h1 class="header-title">Cancel Reservation</h1>
+
+        <span class="live-dot-green"></span>
+      </header>
+
+      <!-- Release Claim Warning Confirmation Box -->
+      <section class="warning-confirm-box">
+        <div class="warning-title-row">
+          <span class="red-dot"></span>
+          <h2 class="warning-title">Release Claim Confirmation</h2>
+        </div>
+        <p class="warning-text">
+          Are you sure you want to release this reservation? This will make the reserved food available for other recipients.
+        </p>
+      </section>
+
+      <!-- Reservation Summary Mini Card -->
+      <section class="item-summary-card">
+        <div class="item-thumb-placeholder"></div>
+        <div class="item-summary-info">
+          <div class="donor-line">
+            <strong class="donor-name">Green Garden</strong>
+            <span class="badge-verified">VERIFIED</span>
+          </div>
+          <span class="sub-brand">Bistro</span>
+          <span class="cuisine-type">Vegetarian</span>
+          <span class="dist-time">2.4 km away • Pickup: 6:00 PM – 7:00 PM</span>
+        </div>
+      </section>
+
+      <!-- Refund & Ledger -->
+      <section class="refund-ledger-card">
+        <h3 class="ledger-title">Refund &amp; Ledger</h3>
+
+        <div class="ledger-rows">
+          <div class="ledger-row">
+            <span class="ledger-label">Reserved Amount</span>
+            <span class="ledger-val">$6.50</span>
+          </div>
+          <div class="ledger-row">
+            <span class="ledger-label">Refundable</span>
+            <span class="ledger-val text-green">$6.50</span>
+          </div>
+          <div class="ledger-row row-total">
+            <strong class="ledger-label-total">Total Refundable</strong>
+            <strong class="ledger-val-total text-green">$6.50</strong>
+          </div>
+        </div>
+
+        <div class="refund-notice-box">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#008744" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span class="refund-notice-text">
+            Refund will be processed after the reservation is successfully released.
+          </span>
+        </div>
+      </section>
+
+      <!-- Reason for Releasing Radio Group -->
+      <section class="reason-section">
+        <h3 class="reason-heading">Reason for Releasing</h3>
+
+        <form class="reason-form" action="explore.html" method="get">
+          <label class="reason-radio-label">
+            <input type="radio" name="cancel_reason" value="location" class="reason-radio" checked>
+            <span class="custom-radio-circle"></span>
+            <span class="reason-text">Unable to reach pickup location</span>
+          </label>
+
+          <label class="reason-radio-label">
+            <input type="radio" name="cancel_reason" value="plans" class="reason-radio">
+            <span class="custom-radio-circle"></span>
+            <span class="reason-text">Unexpected change in plans</span>
+          </label>
+
+          <label class="reason-radio-label">
+            <input type="radio" name="cancel_reason" value="needed" class="reason-radio">
+            <span class="custom-radio-circle"></span>
+            <span class="reason-text">Food is no longer needed</span>
+          </label>
+
+          <label class="reason-radio-label">
+            <input type="radio" name="cancel_reason" value="other" class="reason-radio">
+            <span class="custom-radio-circle"></span>
+            <span class="reason-text">Other personal reason</span>
+          </label>
+
+          <!-- Need Help Box -->
+          <div class="help-box">
+            <div class="help-icon-circle">?</div>
+            <div class="help-text">
+              <strong class="help-title">Need help with your reservation?</strong>
+              <span class="help-sub">Contact support before releasing your claim.</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="cancel-cta-group">
+            <a href="explore.html" class="btn-release-reservation">
+              <span>Release Reservation</span>
+            </a>
+            <a href="reservation-pass.html" class="link-keep-reservation">
+              <span>Keep My Reservation</span>
+            </a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurplusLink - Bakery Rescue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <input type="checkbox" id="nav-drawer-toggle" class="drawer-toggle">
+  <div class="drawer-overlay">
+    <label for="nav-drawer-toggle" class="drawer-backdrop"></label>
+    <nav class="drawer-menu">
+      <div class="drawer-header">
+        <h3>SurplusLink Architecture</h3>
+        <label for="nav-drawer-toggle" class="drawer-close">&times;</label>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html" class="active">1. Welcome Onboarding</a>
+        <a href="role-selection.html">2. Role Selection (3 States)</a>
+        <a href="login.html">3. Login & Sign Up (Provider/Recipient)</a>
+        <a href="signup.html">4. Create Account Form</a>
+        <a href="explore.html">5. Tactical Feed & Explore</a>
+        <a href="radar.html">6. Live Radar & Tactical Map</a>
+        <a href="safety-detail.html">7. Safety & Cold-Chain Protocol</a>
+        <a href="claim-review.html">8. Claim & Reserve Review</a>
+        <a href="reservation-pass.html">9. Active Dispatch Pass & QR</a>
+        <a href="call.html">10. E2EE Dispatch In-App Call</a>
+        <a href="cancel-reservation.html">11. Cancel Reservation / Ledger</a>
+        <a href="compliance-audit.html">12. Compliance & Audit (FDA/HACCP)</a>
+        <a href="list-food.html">13. List Food - Item Details</a>
+        <a href="listing-pickup.html">14. Fast Listing - Pickup & Dock</a>
+        <a href="alerts.html">15. Tactical Alerts & Verification</a>
+        <a href="queue.html">16. Live Pickup Queue</a>
+        <a href="impact.html">17. Bakery Impact Hub & Ledger</a>
+        <a href="profile.html">18. Profile & Operations Hub</a>
+        <a href="notes.html" style="color: #006837; font-weight: 700; background: #e8f5ee; margin-top: 6px; border-radius: 6px;">📚 HTML &amp; CSS Mastery Notes</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="app-viewport">
+    <main class="welcome-screen">
+      <div class="hero-image-wrapper">
+        <img 
+          src="/assets/bakery_hero_clean.png" 
+          alt="Freshly baked artisan sourdough loaves in bakery" 
+          class="hero-bg-img"
+        >
+        <div class="hero-overlay"></div>
+
+        <header class="top-status-pills">
+          <div class="status-pill status-pill-dark">
+            <span class="live-dot"></span>
+            <span class="pill-text"><strong>18,400+</strong> meals saved this month</span>
+          </div>
+
+          <div class="status-pill status-pill-light">
+            <svg class="pill-icon leaf-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#007a40" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+            <span class="pill-text uppercase">ZERO WASTE</span>
+          </div>
+        </header>
+      </div>
+
+      <section class="bottom-sheet-card">
+        <div class="drag-handle" aria-hidden="true"></div>
+
+        <div class="brand-row">
+          <div class="brand-icon-box">
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <g fill="#fff">
+    <path d="M77 18c-9 2-17 10-18 20-.7 5 1 9 4 12L22 91l9 9 41-41c3 3 7 4 12 3 10-1 18-9 20-18 2-8-1-17-7-22s-15-6-23-4Z"/>
+    <path d="M23 16c-8 8-11 17-8 26 2 6 7 11 13 17l11 11 15-15-11-11c-6-6-11-11-17-13l-3-15Z"/>
+    <path d="m58 72 8-8 36 36-9 9-35-37Z"/>
+  </g>
+</svg>
+              <path d="M18 2h-3a4 4 0 0 0-4 4v2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a4 4 0 0 0-4-4Z"/>
+              <path d="m16 8-6 6"/>
+              <path d="m10 8 6 6"/>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">SurplusLink <span class="brand-dot">•</span></span>
+            <span class="brand-tag">BAKERY RESCUE</span>
+          </div>
+        </div>
+
+        <div class="hero-typography">
+          <h1 class="main-heading">
+            SurplusLink<br>
+            <span class="highlight-green">Bakery Rescue</span>
+          </h1>
+          <p class="sub-description">
+            Rescuing fresh bakery food before closing time.
+          </p>
+        </div>
+
+        <div class="cta-action">
+          <a href="role-selection.html" class="btn btn-primary btn-large">
+            <span>Get Started</span>
+            <svg class="btn-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+       
+        <footer class="value-props-grid">
+          <div class="prop-item">
+            <div class="prop-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#007a40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
+                <path d="M8 17h8"/>
+                <path d="M6 21h12"/>
+              </svg>
+            </div>
+            <span class="prop-label">Fresh Breads & Pastries</span>
+          </div>
+
+          <div class="prop-item">
+            <div class="prop-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#007a40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <span class="prop-label">Zero Bakery Waste</span>
+          </div>
+
+          <div class="prop-item">
+            <div class="prop-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#007a40" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <span class="prop-label">Local Community Support</span>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+    

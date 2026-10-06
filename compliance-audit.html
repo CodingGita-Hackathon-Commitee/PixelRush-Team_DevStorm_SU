@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurplusLink - Compliance & Audit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="compliance-audit.css">
+</head>
+<body>
+     <input type="checkbox" id="nav-drawer-toggle" class="drawer-toggle">
+ 
+  <div class="drawer-overlay">
+    <label for="nav-drawer-toggle" class="drawer-backdrop"></label>
+    <nav class="drawer-menu">
+      <div class="drawer-header">
+        <h3>SurplusLink Architecture</h3>
+        <label for="nav-drawer-toggle" class="drawer-close">&times;</label>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html">1. Welcome Onboarding</a>
+        <a href="role-selection.html">2. Role Selection (3 States)</a>
+        <a href="login.html">3. Login & Sign Up (Provider/Recipient)</a>
+        <a href="signup.html">4. Create Account Form</a>
+        <a href="explore.html">5. Tactical Feed & Explore</a>
+        <a href="radar.html">6. Live Radar & Tactical Map</a>
+        <a href="safety-detail.html">7. Safety & Cold-Chain Protocol</a>
+        <a href="claim-review.html">8. Claim & Reserve Review</a>
+        <a href="reservation-pass.html">9. Active Dispatch Pass & QR</a>
+        <a href="call.html">10. E2EE Dispatch In-App Call</a>
+        <a href="cancel-reservation.html">11. Cancel Reservation / Ledger</a>
+        <a href="compliance-audit.html" class="active">12. Compliance & Audit (FDA/HACCP)</a>
+        <a href="list-food.html">13. List Food - Item Details</a>
+        <a href="listing-pickup.html">14. Fast Listing - Pickup & Dock</a>
+        <a href="alerts.html">15. Tactical Alerts & Verification</a>
+        <a href="queue.html">16. Live Pickup Queue</a>
+        <a href="impact.html">17. Bakery Impact Hub & Ledger</a>
+        <a href="profile.html">18. Profile & Operations Hub</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="app-viewport">
+    <main class="compliance-screen">
+        <div class="device-status-bar">
+        <span class="status-time">9:41</span>
+        <div class="status-icons">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L12 22l7.03-4.39C20.26 16.07 21 14.12 21 12c0-4.97-4.03-9-9-9z"/></svg>
+          <svg width="18" height="12" viewBox="0 0 24 14" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="1" width="18" height="12" rx="3"/><line x1="22" y1="4" x2="22" y2="10"/></svg>
+        </div>
+      </div>
+
+      <header class="app-header">
+        <a href="safety-detail.html" class="icon-nav-btn" aria-label="Go back">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </a>
+
+        <div class="header-center-info">
+          <div class="header-title-row">
+            <h1 class="header-title">Compliance &amp; Audit</h1>
+            <span class="badge-verified">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>VERIFIED</span>
+            </span>
+          </div>
+          <span class="header-protocol-sub">SurplusLink Protocol • Pass #FSP-9921</span>
+        </div>
+
+        <button type="button" class="btn-share-icon" aria-label="Share Document">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="18" cy="5" r="3"></circle>
+            <circle cx="6" cy="12" r="3"></circle>
+            <circle cx="18" cy="19" r="3"></circle>
+            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+          </svg>
+        </button>
+      </header>
+
+
+        <section class="fsma-lock-banner">
+        <div class="fsma-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <polyline points="9 12 12 15 16 10"></polyline>
+          </svg>
+        </div>
+        <div class="fsma-text-block">
+          <div class="fsma-title-row">
+            <strong class="fsma-title">HACCP &amp; FSMA CERTIFIED</strong>
+            <span class="fda-badge">FDA SEC. 204</span>
+          </div>
+          <p class="fsma-sub">Tamper-evident chain of custody locked</p>
+        </div>
+      </section>  <section class="fsma-lock-banner">
+        <div class="fsma-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <polyline points="9 12 12 15 16 10"></polyline>
+          </svg>
+        </div>
+        <div class="fsma-text-block">
+          <div class="fsma-title-row">
+            <strong class="fsma-title">HACCP &amp; FSMA CERTIFIED</strong>
+            <span class="fda-badge">FDA SEC. 204</span>
+          </div>
+          <p class="fsma-sub">Tamper-evident chain of custody locked</p>
+        </div>
+      </section>
+
+
+      <section class="archival-preview-section">
+        <div class="preview-header-bar">
+          <div class="preview-title-row">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            <span class="preview-label">ARCHIVAL DOCUMENT PREVIEW</span>
+          </div>
+          <span class="pdf-format-tag">PDF/A-1b • 1.4 MB</span>
+        </div>
+
+
+        <article class="document-sheet">
+          <div class="doc-header-row">
+            <div>
+              <div class="doc-logo-line">
+                <span class="doc-brand-sq">S</span>
+                <strong class="doc-brand-name">SURPLUSLINK PROTOCOL</strong>
+              </div>
+              <h2 class="doc-heading">CHAIN-OF-CUSTODY &amp; SAFETY AUDIT</h2>
+              <span class="doc-manifest-num">Standard Electronic Manifest #DOC-2026-FSP-9921</span>
+            </div>
+            
+         <div class="fda-stamp">
+              <div class="stamp-inner">
+                <span class="stamp-agency">FDA/USDA</span>
+                <span class="stamp-check">✓</span>
+                <span class="stamp-text">VERIFIED</span>
+              </div>
+            </div>
+          </div>
+
+                  <div class="doc-metadata-grid">
+            <div class="meta-field">
+              <span class="field-label">INSPECTION TIMESTAMP</span>
+              <strong class="field-val">Oct 05, 2026 • 2:00 PM PST</strong>
+            </div>
+
+            <div class="meta-field">
+              <span class="field-label">BATCH RESCUE PASS</span>
+              <strong class="field-val text-green">#FSP-9921</strong>
+            </div>
+
+            <div class="meta-field">
+              <span class="field-label">DONOR FACILITY</span>
+              <strong class="field-val">Commissary Bay 4 (Seattle Health Gr. A)</strong>
+            </div>
+
+            <div class="meta-field">
+              <span class="field-label">FOOD CATEGORY</span>
+              <strong class="field-val">Cooked / Chilled Trays (Vegan)</strong>
+            </div>
+          </div>
+
+
+          <div class="doc-probe-trail">
+            <div class="probe-trail-header">
+              <span class="trail-label">Continuous Probe Audit Trail (4 Hours)</span>
+              <span class="trail-pass-badge">PASS: 3.4°C AVG</span>
+            </div>
+            <div class="trail-svg-box">
+              <svg viewBox="0 0 280 40" class="trail-svg">
+                <path d="M 10 24 Q 60 18, 90 20 T 160 26 T 270 21" fill="none" stroke="#10b981" stroke-width="2.5" />
+                <circle cx="10" cy="24" r="3" fill="#10b981" />
+                <circle cx="270" cy="21" r="3" fill="#10b981" />
+              </svg>
+              <div class="trail-times-row">
+                <span>10:30A (3.2°)</span>
+                <span>Now (3.4°C)</span>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="crypto-seal-row">
+            <div class="crypto-sig-text">
+              <div class="sig-line">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#008744" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>Ed25519 Digital Signature Verified</span>
+              </div>
+              <span class="sig-node">SurplusLink Telemetry Node #7821-WA</span>
+            </div>
+
+            <div class="hash-matrix-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="#111827">
+                <rect x="2" y="2" width="6" height="6"/>
+                <rect x="16" y="2" width="6" height="6"/>
+                <rect x="2" y="16" width="6" height="6"/>
+                <rect x="10" y="10" width="4" height="4"/>
+              </svg>
+              <span class="hash-text">SHA-256<br>8F4B39</span>
+            </div>
+          </div>
+
+          <div class="retention-footer">
+            <span>Statutory Retention: 7 Years (FSMA Rule)</span>
+            <span class="crypto-valid-pill">● Cryptographically Valid</span>
+          </div>
+        </article>
+      </section>
+
+
+          <section class="breakdown-section">
+        <div class="breakdown-header">
+          <h3 class="breakdown-title">AUDIT BREAKDOWN &amp; ENDORSEMENTS</h3>
+          <span class="badge-passed-all">5 OF 5 PASSED</span>
+        </div>
+
+        <div class="endorsement-list">
+          <div class="endorsement-item">
+            <div class="endorsement-check">✓</div>
+            <div class="endorsement-text">
+              <div class="endorsement-title-row">
+                <strong class="item-title">Cold-Chain Continuous Probe Record</strong>
+                <span class="target-val">3.4°C Target</span>
+              </div>
+              <p class="item-desc">Calibrated IoT telemetry log within legal chilled tolerance (0°C – 4°C).</p>
+            </div>
+          </div>
+
+          <div class="endorsement-item">
+            <div class="endorsement-check">✓</div>
+            <div class="endorsement-text">
+              <div class="endorsement-title-row">
+                <strong class="item-title">Tamper-Evident Packaging Verification</strong>
+                <span class="target-val">3/3 Checks</span>
+              </div>
+              <p class="item-desc">Food-grade insulated bins, zip-lock seals uncompromised, lids intact.</p>
+            </div>
+          </div>
+
+          <div class="endorsement-item">
+            <div class="endorsement-check">✓</div>
+            <div class="endorsement-text">
+              <div class="endorsement-title-row">
+                <strong class="item-title">Donor Facility Grade A Inspection</strong>
+                <span class="target-val score-highlight">Score 98/100</span>
+              </div>
+              <p class="item-desc">Public Health Seattle &amp; King County inspection on record (Bay 4).</p>
+            </div>
+          </div>
+
+          <div class="endorsement-item">
+            <div class="endorsement-check">✓</div>
+            <div class="endorsement-text">
+              <div class="endorsement-title-row">
+                <strong class="item-title">Allergen &amp; Dietary Declaration</strong>
+                <span class="target-val">Form 4B</span>
+              </div>
+              <p class="item-desc">Vegan certified, dairy-free, nut-free. Shared oven advisory disclosed.</p>
+            </div>
+          </div>
+
+          <div class="endorsement-item">
+            <div class="endorsement-check">✓</div>
+            <div class="endorsement-text">
+              <div class="endorsement-title-row">
+                <strong class="item-title">Bill Emerson Act Immunity Endorsement</strong>
+                <span class="target-val">Pub. L. 104-210</span>
+              </div>
+              <p class="item-desc">Legal protection for donor &amp; recipient in good-faith surplus transfer.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+         <section class="export-package-section">
+        <h3 class="export-heading">SELECT EXPORT PACKAGE</h3>
+
+        <form class="export-options-form">
+          <label class="package-radio-card">
+            <input type="radio" name="export_pkg" value="full" class="package-radio-input" checked>
+            <div class="pkg-top-row">
+              <span class="pkg-radio-circle"></span>
+              <strong class="pkg-name">Full Audit Package (PDF)</strong>
+              <span class="rec-badge">Recommended</span>
+            </div>
+            <p class="pkg-details">
+              Complete sensor telemetry logs, tray batch photo evidence, kitchen inspection sheet, and cryptographic audit proofs.
+            </p>
+          </label>
+
+          <label class="package-radio-card">
+            <input type="radio" name="export_pkg" value="driver" class="package-radio-input">
+            <div class="pkg-top-row">
+              <span class="pkg-radio-circle"></span>
+              <strong class="pkg-name">Driver Summary Slip (PDF)</strong>
+              <span class="size-badge">1 Page (0.3 MB)</span>
+            </div>
+            <p class="pkg-details">
+              Condensed manifest &amp; critical temperature hand-off checkpoint for couriers.
+            </p>
+          </label>
+
+          <label class="package-radio-card">
+            <input type="radio" name="export_pkg" value="csv" class="package-radio-input">
+            <div class="pkg-top-row">
+              <span class="pkg-radio-circle"></span>
+              <strong class="pkg-name">Raw Sensor Telemetry (CSV)</strong>
+              <span class="size-badge">Data Stream</span>
+            </div>
+            <p class="pkg-details">
+              Timestamped temperature array formatted for ERP/WMS compliance ingestion.
+            </p>
+          </label>
+        </form>
+
+
+
+        <div class="export-actions-group">
+          <a href="/PixelRush-Team_DevStorm_SU/PixelRush Hackathon's Further Details.pdf" class="btn-download-signed">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Signed PDF (1.4 MB)</span>
+          </a>
+
+          <button type="button" class="btn-share-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Share via Secure Link / Email Inspector</span>
+          </button>
+        </div>
+
+        <footer class="compliance-footer-seal">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#008744" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          <span>AES-256 Encrypted • SHA-256: 8f4b...3901</span>
+        </footer>
+      </section>
+    </main>
+  </div>
+</body>
+</html> 
+
+
+
+
+
+
+
+
